@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+   background-color:#1D3557;
+   }
+   navbar-nav{
+    color: #FFFFFF;
+   }
+
+.navbar-brand img{
+    width: 5em;
+    height: 5em;
+}
+
+body{
+    background-color: #1D3557;
+}
+.container {
+    padding: 50px;
+}
