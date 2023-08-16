@@ -6,7 +6,7 @@
 .navbar{
    background-color:#1D3557;
    }
-   navbar-nav{
+   .navbar a{
     color: #FFFFFF;
    }
 
@@ -14,10 +14,104 @@
     width: 5em;
     height: 5em;
 }
-
+.dropdown-menu{
+    background: #1D3557;
+}
 body{
     background-color: #1D3557;
+    color: #FFFFFF;
 }
-.container {
+.Encabezados{
+    text-align: center;
+}
+.imagen{
+    display: inline;
+}
+div img{
+   height:  45.4vh;
+   aspect-ratio: 21/9;
+   
+}
+.section1{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   color: #FFFFFF;
+    font-size:20px;
+    margin-bottom: 200px;
+}
+.section1 div{
+    padding:30px;
+    
+}
+.section1 a{
+    text-decoration: none;
+
+}
+.hover:hover{
+    background-color: white;
+    box-shadow: 2px 2px 2px #1D3557;
+    border-bottom: purple 5px solid;
+}
+.hover:hover p{
+    color: black;
+    font-weight: 600;
+}
+.Bibli{
+    text-align: left;
+    margin: 50px;
+}
+.Bibli p{
+    font-size: 25px;
+}
+.container{
     padding: 50px;
+     }
+.col{
+    margin: 15px;
 }
+.card-text{
+    height: 10rem;
+    overflow: auto;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+  .footer ul{
+    list-style:  none;
+    margin-right: 15px;
+  }
+ 
+  /* Media queries */
+  @media only screen and (max-width:600px){
+    .img2{
+        display: none;
+        
+    }
+    .img1{
+        height: 45vh;
+    }
+  }
+  @media only screen and (max-width:768px){
+    .img2{
+        display: none;
+        
+        
+    }
+    .img1{
+        height: 57vh;
+    }
+  }
+  @media only screen and (max-width:992px){
+    .img2{
+        display: none;
+        
+        
+    }
+    .img1{
+        height: 73vh;
+    }
+  }
