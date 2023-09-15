@@ -6,5 +6,5 @@ var nombre = prompt("Por favor, introduce tu nombre:");
 if (nombre !== null && nombre !== "") {
    alert("¡Hola, " + nombre + "! Bienvenido a nuestro sitio web.")
 } else {
-    alert ("¡Hola,por favor ingresa un nombre válido!.")
+    alert("No proporcionaste un nombre. ¡Hola, visitante!");
 }
