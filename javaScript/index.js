@@ -8,3 +8,5 @@ if (nombre !== null && nombre !== "") {
 } else {
     alert("No proporcionaste un nombre. ¡Hola, visitante!");
 }
+console.log("Nombre del usuario: " + nombre);
+
