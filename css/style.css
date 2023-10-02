@@ -28,7 +28,7 @@ body{
     display: inline;
 }
 div img{
-   height:  48vh;
+   width: 213vh;
    aspect-ratio: 21/9;
    
 }
@@ -76,6 +76,85 @@ div img{
     height: 10rem;
     overflow: auto;
 }
+/* formulario de contacto */
+.contact{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color:#8979da ; 
+  padding-left: 30px; 
+}
+
+
+.input{
+	background-color: #8979da; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:#0f010f ; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color:#8979da ; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #0f010f; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+.boton{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color:#8979da ; 
+	border-color: #0f010f; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #8979da; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+/* footer */
 .footer{
     display: flex;
     justify-content: flex-end;
@@ -138,30 +217,19 @@ div img{
  
   /* Media queries */
   @media only screen and (max-width:600px){
-    .img2{
-        display: none;
-        
-    }
+   
     .img1{
         height: 45vh;
     }
   }
   @media only screen and (max-width:768px){
-    .img2{
-        display: none;
-        
-        
-    }
+    
     .img1{
         height: 57vh;
     }
   }
   @media only screen and (max-width:992px){
-    .img2{
-        display: none;
-        
-        
-    }
+    
     .img1{
         height: 73vh;
     }
