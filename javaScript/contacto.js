@@ -50,7 +50,8 @@ formulario.addEventListener('submit', function(event){
 };
 });
 
-
+// Almacenar base  de datos en local storage
+localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos));
 
 
 
