@@ -154,6 +154,15 @@ span{
 	font-size: 13px;  
 	color: #0e0e0e;  
 }
+
+div.errores ul{
+  list-style: none;
+}
+
+div.errores ul li{
+  font-size: 13px;  
+	color: red; 
+}
 /* footer */
 .footer{
     display: flex;
