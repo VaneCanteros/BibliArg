@@ -40,15 +40,17 @@ formulario.addEventListener('submit', function(event){
    for(let i = 0; i < errores.length; i++){
     ulErrores.innerHTML += '<li> ' + errores[i] + '</li>'}
 
-    if(errores.length==0){
+    if(errores.length===0){
         baseDeDatos.push({
             nombre:inputNombre.value,
             apellido:inputApellido.value,
             email:inputMail.value
         });
     }
-};
+}
 });
+
+
 
 // Almacenar base  de datos en local storage
 localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos));
