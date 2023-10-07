@@ -54,7 +54,7 @@ localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos));
 
 // Mostrar la informacion al usuario
 let infoUsuario=document.querySelector('div.infoUsuario');
-infoUsuario.innerHTML+= '<p>'+ "Bienvenid@ "+inputNombre.value+",te has registrado con el mail "+ inputMail.value+'<p>';
+infoUsuario.innerHTML+= '<p>'+ "Bienvenid@ "+baseDeDatos.nombre+",te has registrado con el mail "+ baseDeDatos.mail+'<p>';
 
 
 
