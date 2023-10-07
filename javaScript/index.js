@@ -12,7 +12,7 @@ console.log("Nombre del usuario: " + nombre);
 
 
 // Base de datos de libros cargados en la página
-let libros=[
+const libros=[
     {nombre:'Rayuela',Autor:'Julio Cortazar',Genéro:'Cuento'},
     {nombre:'Una misma noche',Autor:'Leopoldo Brizuela',Genéro:'Cuento'},
     {nombre:'El jorobadito',Autor:'Robert Arlt',Genéro:'Cuento'},
@@ -41,7 +41,7 @@ let libros=[
     {nombre:'Llamarada',Autor:'Jorge Gonzalez',Género:'Comic'},
     {nombre:'Cuentos inciertos',Autor:'Mariana Ruiz Johnson/Alejandro Farías',Género:'Comic'},
 ]
-// Base de datos pasada a formato JSON
-let librosJSON = JSON.stringify(libros);
+// Almacenar base  de datos en local storage
+localStorage.setItem('baseDeDatos',JSON.stringify(libros));
 
 

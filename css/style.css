@@ -90,7 +90,7 @@ div img{
 
 
 .input{
-	background-color: #8979da; 
+	; 
 	width: 408px; 
 	height: 40px; 
 	border-radius: 5px;  
@@ -104,7 +104,7 @@ div img{
 
 
 textarea{
-  background-color:#8979da ; 
+   
 	width: 405px; 
 	height: 150px; 
 	border-radius: 5px;  
@@ -145,9 +145,7 @@ button p{
 }
 
 
-span{
-	color: #8979da; 
-}
+
 
 
 .aviso{
