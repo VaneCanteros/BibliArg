@@ -34,20 +34,20 @@ const mensaje= document.querySelector("#mensaje");
 
 
 if(errores==0){
-  baseDeDatos.push([
+  baseDeDatos.push(
     {
       nombre:inputNombre.value,
       apellido:inputApellido.value,
       mail:inputMail.value
     }
-  ])
+  )
 // Almacenar base  de datos en local storage
 localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos)); 
 // Mostrar la informacion al usuario
-const datosGuardados=JSON.parse(localStorage.getItem("baseDeDatos"));
+
 let infoUsuario=document.querySelector('div.infoUsuario');
-infoUsuario.innerHTML+= '<p>'+ "Bienvenid@ "+datosGuardados[0].nombre+",te has registrado con el mail "+ datosGuardados[0].mail+'<p>';
-    };
+infoUsuario.innerHTML += '<p>' + "Bienvenid@ " + baseDeDatos[0].nombre + ",te has registrado con el mail " + baseDeDatos[0].mail + '<p>';
+};
  
 
    
