@@ -1,10 +1,13 @@
-const inputNombre = document.querySelector("#nombre");
-const inputApellido= document.querySelector("#apellido");
-const inputMail=document.querySelector("#email");
 // Validación de formulario
 let formulario= document.querySelector("#form");
 formulario.addEventListener('submit', function(event){
+event.preventDefault();
+ // Base de datos
+ const baseDeDatos=[];
 let errores=[];
+  const inputNombre = document.querySelector("#nombre");
+  const inputApellido= document.querySelector("#apellido");
+  const inputMail=document.querySelector("#email"); 
 const regexEmail=/^\w+\.|\-|\w+\w+[@]\w+(\-{1}|\w)\w+[.]\w{2,3}/;
 const inputAsunto= document.querySelector("#asunto");
 const mensaje= document.querySelector("#mensaje");
@@ -25,41 +28,27 @@ const mensaje= document.querySelector("#mensaje");
    if(mensaje.value==""||mensaje.value.length===0||mensaje.value==null){
     errores.push("Por favor dejános tu mensaje");
    }
-  
-   
-   let ulErrores = document.querySelector('div.errores ul');
+  let ulErrores = document.querySelector('div.errores ul');
    for(let i = 0; i < errores.length; i++){
     ulErrores.innerHTML += '<li> ' + errores[i] + '</li>'}
 
-    
- if (errores.length > 0) {
-        event.preventDefault();
-       }
+
+if(errores==0){
+  baseDeDatos.push([
+    {
+      nombre:inputNombre.value,
+      apellido:inputApellido.value,
+      mail:inputMail.value
+    }
+  ])
+// Almacenar base  de datos en local storage
+localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos)); 
+// Mostrar la informacion al usuario
+const datosGuardados=JSON.parse(localStorage.getItem("baseDeDatos"));
+let infoUsuario=document.querySelector('div.infoUsuario');
+infoUsuario.innerHTML+= '<p>'+ "Bienvenid@ "+datosGuardados[0].nombre+",te has registrado con el mail "+ datosGuardados[0].mail+'<p>';
+    };
+ 
 
    
 });
-
- // Base de datos
- const baseDeDatos=[
-    {
-        nombre:inputNombre.value,
-        apellido:inputApellido.value,
-        mail:inputMail.value
-
-    }
-];
-
-// Almacenar base  de datos en local storage
-localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos));  
-
-// Mostrar la informacion al usuario
-let infoUsuario=document.querySelector('div.infoUsuario');
-infoUsuario.innerHTML+= '<p>'+ "Bienvenid@ "+baseDeDatos.nombre+",te has registrado con el mail "+ baseDeDatos.mail+'<p>';
-
-
-
-
-
-
-
-
