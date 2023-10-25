@@ -3,7 +3,7 @@ let formulario= document.querySelector("#form");
 formulario.addEventListener('submit', function(event){
 event.preventDefault();
  // Base de datos
- const baseDeDatos=[];
+ const usuarios=[];
 let errores=[];
   const inputNombre = document.querySelector("#nombre");
   const inputApellido= document.querySelector("#apellido");
@@ -34,19 +34,21 @@ const mensaje= document.querySelector("#mensaje");
 
 
 if(errores==0){
-  baseDeDatos.push(
+
+  usuarios.push(
     {
       nombre:inputNombre.value,
       apellido:inputApellido.value,
       mail:inputMail.value
     }
   )
+
 // Almacenar base  de datos en local storage
-localStorage.setItem('baseDeDatos',JSON.stringify(baseDeDatos)); 
+localStorage.setItem('usuarios',JSON.stringify(usuarios)); 
 // Mostrar la informacion al usuario
 
 let infoUsuario=document.querySelector('div.infoUsuario');
-infoUsuario.innerHTML += '<p>' + "Bienvenid@ " + baseDeDatos[0].nombre + ",te has registrado con el mail " + baseDeDatos[0].mail + '<p>';
+infoUsuario.innerHTML += '<p>' + "Bienvenid@ " + usuarios[0].nombre + ",te has registrado con el mail " + usuarios[0].mail + '<p>';
 };
  
 

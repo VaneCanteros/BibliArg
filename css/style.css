@@ -90,7 +90,7 @@ div img{
 
 
 .input{
-	; 
+	 
 	width: 408px; 
 	height: 40px; 
 	border-radius: 5px;  
@@ -187,6 +187,7 @@ div.errores ul li{
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
 
+
 .facebook {
     background:rgba(255,255,255,1);
     text-indent: -999em;
@@ -226,18 +227,15 @@ div.errores ul li{
   @media only screen and (max-width:600px){
    
     .img1{
-        height: 45vh;
+        width: 111vh;
     }
+   
   }
-  @media only screen and (max-width:768px){
+  @media only screen and (min-width:768px)and(max-width:991px){
     
     .img1{
-        height: 57vh;
+      width: 143vh;
     }
-  }
-  @media only screen and (max-width:992px){
     
-    .img1{
-        height: 73vh;
-    }
   }
+  

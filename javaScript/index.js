@@ -1,27 +1,4 @@
-// Solicitar el nombre al usuario utilizando prompt
-var nombre = prompt("Por favor, introduce tu nombre:");
-var mail= prompt("Por favor ingresa un mail");
-const regexEmail=/^\w+\.|\-|\w+\w+[@]\w+(\-{1}|\w)\w+[.]\w{2,3}/;
-// Comprobar si el usuario proporcionó un nombre
 
-if (nombre !== null && nombre !== "") {
-   alert("¡Hola, " + nombre + "! Bienvenido a nuestro sitio web.")
-} else {
-    alert("No proporcionaste un nombre. ¡Hola, visitante!");
-}
-console.log("Nombre del usuario: " + nombre);
-// Comprobar que el mail sea valido
-if (!regexEmail.test(mail)){
-   alert("Debes proporcionar una dirección de email válida");
-   }
-
-// Base de datos usuarios prompt
-const usuarios=[
-    {
-        nombre:nombre,
-        mail:mail
-    }
-]
 
 // Base de datos de libros cargados en la página
 const libros=[
@@ -55,5 +32,5 @@ const libros=[
 ]
 // Almacenar base  de datos en local storage
 localStorage.setItem('Libros',JSON.stringify(libros));
-localStorage.setItem('Usuarios',JSON.stringify(usuarios));
+
 
