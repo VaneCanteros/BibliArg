@@ -34,7 +34,7 @@ const mensaje= document.querySelector("#mensaje");
 
 
 if(errores==0){
-
+  
   usuarios.push(
     {
       nombre:inputNombre.value,
@@ -42,6 +42,8 @@ if(errores==0){
       mail:inputMail.value
     }
   )
+ 
+
 
 // Almacenar base  de datos en local storage
 localStorage.setItem('usuarios',JSON.stringify(usuarios)); 

@@ -6,6 +6,9 @@
 .navbar{
    background-color:#1D3557;
    }
+   .navbar a:hover{
+    color:red;
+   }
    .navbar a{
     color: #FFFFFF;
    }
@@ -51,12 +54,12 @@ div img{
 
 }
 .hover:hover{
-    background-color: white;
+    background-color: #1D3557;
     box-shadow: 2px 2px 2px #1D3557;
     border-bottom: purple 5px solid;
 }
-.hover:hover p{
-    color: black;
+.hover:hover a{
+    color: white;
     font-weight: 600;
 }
 .Bibli{
@@ -72,9 +75,18 @@ div img{
 .col{
     margin: 15px;
 }
+.card img{
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+
+}
 .card-text{
-    height: 10rem;
-    overflow: auto;
+  
+  height: 10rem;
+  overflow-y:hidden;
+  
+
 }
 /* formulario de contacto */
 .contact{	
@@ -227,15 +239,28 @@ div.errores ul li{
   @media only screen and (max-width:600px){
    
     .img1{
-        width: 111vh;
+        width: 100%;
     }
-   
+   .section1{
+    width: 100%;
+    font-size: 75%;
+    
+   }
+   .section1 div{
+    width: 100%;
+   }
   }
-  @media only screen and (min-width:768px)and(max-width:991px){
+  @media only screen and (min-width:768px) and (max-width:991px){
     
     .img1{
-      width: 143vh;
+      width: 100%;
     }
-    
+    .section1{
+      width:100%;
+      font-size: 75%;
+    }
+    .section1 div{
+      width:100%;
+    }
   }
   
